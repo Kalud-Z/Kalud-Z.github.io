@@ -1,0 +1,22 @@
+
+
+.section-band {
+    padding: 7rem 0;
+    background-color:white;
+
+
+     &__caption {
+        color:grey;
+        font-size: $default-font-size; 
+    } 
+
+    &__picture {
+        border-radius: 50%;
+        opacity: 0.7;
+        transition: all 0.2s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+}
