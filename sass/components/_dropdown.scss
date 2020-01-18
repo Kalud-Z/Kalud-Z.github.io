@@ -1,0 +1,64 @@
+
+
+
+.dropdown {
+    position: relative;
+    @include clearfix;
+    
+
+    &__list {
+        list-style: none;
+        position: absolute;
+        top:5.6rem;
+        right:0;
+    }
+
+    &__item {
+        padding: 1rem 2.3rem;
+        display: block;
+        font-size: calc( #{$default-font-size} - 25%);
+        width: 100%;
+        background-color: lightgray;
+        // font-weight: ;
+        &:hover { background-color: red;}
+        &:hover .dropdown__link { color : white;}
+    }
+
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            width: 100%;
+            text-transform: uppercase;
+            text-decoration: none;
+            color : $color-main-dark;
+            transition: all 0.2s;
+        }
+
+    }
+
+
+    &__toggle {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

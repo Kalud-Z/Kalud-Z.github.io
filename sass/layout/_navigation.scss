@@ -1,0 +1,70 @@
+
+
+.nav-bar {
+    background-color: $color-main-theme;
+    letter-spacing: .4rem;
+    @include clearfix;
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+
+
+    &__logo-box {
+        float : left;
+        margin-left: 1.7rem;
+    }
+
+    &__logo {
+        width : 5rem;
+    }
+
+    &__list {
+        list-style: none;
+        float : right;
+    }
+
+    &__item {
+        padding: 1.7rem 2.3rem;
+        display: inline-block;
+        font-size: $default-font-size;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {            
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: $color-main-theme;
+            color : $color-main-light;
+            transition: all 0.2s;
+        }
+
+        &:hover {
+            color : white;
+        }
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

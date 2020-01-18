@@ -3,8 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  border: 1px solid black; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%;
@@ -18,32 +17,61 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 .heading-primary {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: .5rem; }
 
-.paragraph {
+.para1 {
   font-size: 1.6rem; }
+
+.para2 {
+  font-size: 1.3rem;
+  font-style: italic; }
+
+.city-name-big {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: .5rem;
+  font-style: italic; }
+
+.city-name-small {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: .3rem;
+  font-style: italic;
+  text-transform: capitalize; }
+
+.date {
+  font-size: 1.6rem;
+  font-style: italic; }
 
 .center-elements {
   text-align: center; }
 
+.margin-bottom-extra-small {
+  margin-bottom: 1rem !important; }
+
 .margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .margin-bottom-big {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem !important; }
+
+.color-light {
+  color: #9b9ba8; }
+
+.color-dark {
+  color: #4d4d52; }
 
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  border: 1px solid black; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%;
@@ -52,6 +80,88 @@ html {
 body {
   /* all the stuff in here , will be inherited to the child elements.*/
   box-sizing: border-box; }
+
+.sold-out {
+  padding: 0.25rem 0.55rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.7rem;
+  text-transform: capitalize; }
+
+.tickets-available {
+  padding: 0.1rem 0.75rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  float: right; }
+
+.button {
+  padding: 1.3rem 1.9rem;
+  background-color: #2d2d30;
+  color: white;
+  border: 1px solid #2d2d30;
+  text-transform: capitalize;
+  margin: 1.8rem 0;
+  border-radius: 4px;
+  transition: background-color 0.2s; }
+  .button:hover {
+    background-color: white;
+    color: #2d2d30;
+    border: 1px solid #2d2d30; }
+
+.form__input {
+  padding: 1rem 1rem;
+  width: 100%; }
+
+.form__comment {
+  width: 100%;
+  margin-top: -3rem;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  resize: none; }
+
+.form__button {
+  float: right;
+  margin-top: 1rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.dropdown {
+  position: relative; }
+  .dropdown::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .dropdown__list {
+    list-style: none;
+    position: absolute;
+    top: 5.6rem;
+    right: 0; }
+  .dropdown__item {
+    padding: 1rem 2.3rem;
+    display: block;
+    font-size: calc( 1.6rem - 25%);
+    width: 100%;
+    background-color: lightgray; }
+    .dropdown__item:hover {
+      background-color: red; }
+    .dropdown__item:hover .dropdown__link {
+      color: white; }
+  .dropdown__link, .dropdown__link:link, .dropdown__link:visited {
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4d4d52;
+    transition: all 0.2s; }
+
+.arrow-down {
+  font-size: 3rem;
+  line-height: 120%;
+  vertical-align: middle;
+  transform: rotate(90deg); }
 
 .header {
   position: relative; }
@@ -65,7 +175,7 @@ body {
     transform: translate(-50%, -50%); }
 
 .row {
-  max-width: 120rem;
+  max-width: 105rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 5rem; }
@@ -88,6 +198,50 @@ body {
   .row .col-1-of-4 {
     width: calc( (100% - (5rem * 3) ) / 4); }
 
+.footer {
+  padding: 7rem 0;
+  background-color: #2f2f2f;
+  color: white; }
+
+.footer__link, .footer__link:link, .footer__link:visited {
+  color: blue;
+  text-decoration: none;
+  transition: all .2s; }
+
+.footer__link:hover, .footer__link:active {
+  text-decoration: underline; }
+
+.nav-bar {
+  background-color: #2d2d30;
+  letter-spacing: .4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1111; }
+  .nav-bar::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .nav-bar__logo-box {
+    float: left;
+    margin-left: 1.7rem; }
+  .nav-bar__logo {
+    width: 5rem; }
+  .nav-bar__list {
+    list-style: none;
+    float: right; }
+  .nav-bar__item {
+    padding: 1.7rem 2.3rem;
+    display: inline-block;
+    font-size: 1.6rem; }
+  .nav-bar__link, .nav-bar__link:link, .nav-bar__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #2d2d30;
+    color: #9b9ba8;
+    transition: all 0.2s; }
+  .nav-bar__link:hover {
+    color: white; }
+
 .section-band {
   padding: 7rem 0;
   background-color: white; }
@@ -100,3 +254,66 @@ body {
     transition: all 0.2s; }
     .section-band__picture:hover {
       opacity: 1; }
+
+.section-tour-dates {
+  background-color: #2d2d30;
+  color: white;
+  padding: 7rem 0; }
+  .section-tour-dates__list {
+    list-style: none;
+    text-align: left;
+    z-index: 0; }
+  .section-tour-dates__item {
+    padding: 1rem 1rem;
+    background-color: white;
+    font-size: 1.6rem;
+    position: relative; }
+    .section-tour-dates__item:not(:last-child) {
+      border-bottom: 1px solid #9b9ba8; }
+  .section-tour-dates__picture-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0; }
+  .section-tour-dates__picture {
+    width: 100%;
+    height: auto;
+    transform: scale(1.03);
+    transition: all 0.7s;
+    opacity: 0.85; }
+  .section-tour-dates__column {
+    background-color: white; }
+  .section-tour-dates__column:hover .section-tour-dates__picture {
+    opacity: 1;
+    transform: scale(1.12); }
+  .section-tour-dates__sold-out {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%); }
+
+.section-contact {
+  padding: 7rem 0;
+  font-size: 1.6rem; }
+  .section-contact__list {
+    list-style: none; }
+  .section-contact__item {
+    text-decoration: none;
+    padding: 1rem 0; }
+    .section-contact__item:first-child {
+      margin-left: 0.7rem;
+      font-style: oblique; }
+  .section-contact__logo {
+    line-height: 120%;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    padding: 0.3rem 0.5rem; }
+
+.section-map {
+  margin-bottom: -.3rem; }
+  .section-map__border-top {
+    border-top: 1px solid #9b9ba8;
+    width: 44%;
+    margin: 0 auto;
+    padding-top: 7rem; }
+  .section-map__picture {
+    width: 100%; }
