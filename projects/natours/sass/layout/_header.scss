@@ -1,0 +1,36 @@
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom ,
+    transparentize($color-primary-light, 0.4) ,
+    transparentize($color-primary-dark , 0.4) ) ,
+     url(../img/hero.jpg) ;
+    background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+    background-position: top; /* the top stays the same upon resizing the window. */
+    clip-path: polygon(0 0 , 100% 0 , 100% 75vh , 0 100%);
+    position: relative;
+
+    @include respond(phone) {
+    clip-path: polygon(0 0 , 100% 0 , 100% 84vh , 0 100%);
+    }
+
+    &__box-logo { /* div element containing the img element */
+        position: absolute;
+        top : 4rem;
+        left: 4rem;
+    }
+
+    &__logo {   /* the image element */
+        height: 3.5rem; 
+        width: auto;
+    }
+    
+    &__text-box {  /* div element containing the title (h1) and the button */
+        position: absolute;
+        top : 40%;
+        left: 50%;
+        transform: translate(-50% , -50%); /* x% in relation to the element itself ! */
+        text-align: center;
+    }
+}
+

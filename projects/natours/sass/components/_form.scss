@@ -1,0 +1,117 @@
+
+
+.form {
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white , .5);
+        font-family: inherit; //because , for form tag , it doesnt happen automatically!
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        font-family: inherit;
+        color : inherit;
+        transition: .3s;
+        &::-webkit-input-placeholder {
+            color : $color-dark-grey-2 ;
+        }
+
+        &:focus {
+             outline: none;
+             box-shadow: 0 1rem 3rem rgba($color-black , .5);
+             border-bottom:3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom:3px solid $color-secondary-dark;
+        }        
+    }
+
+   
+    &__label {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top:  .7rem;
+        display: block;    //otherwise we coulndt use the box model properties . for exmpl : margin
+        transition: all .3s;
+    }
+
+    
+    &__input:placeholder-shown + &__label  {  // when the placeholder is shown , we wanna the label to be hidden
+        opacity: 0;
+        visibility: hidden;   //so the element completely disappear from the page. AND we cant use this alone , because we cannot animate it !
+        transform: translateY(-4rem);
+    }
+
+    &__radio-group {
+        width: 43%;
+        display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+        }
+
+        &:first-child {
+            margin-left: 13%;
+            @include respond(tab-port) {margin-left: 2rem;}
+        }
+    }
+
+    &__radio-label {
+        font-size: $default-font-size;
+        cursor: pointer;    // it changes the cursor upon hovering on it
+        position: relative;
+        padding: .5rem 2rem;
+    }
+
+    &__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border : 5px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top:0;
+        left: -2.5rem;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-primary;
+            border-radius: inherit;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50% , -50%);
+            opacity: 0;
+            transition: all .4s;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after { opacity: 1; }
+
+    &__radio-input { display: none; }
+
+}
+
+
+
+
+
+
+
+
+
+
+

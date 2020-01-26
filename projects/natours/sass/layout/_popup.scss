@@ -1,0 +1,92 @@
+
+
+
+
+.popup {
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba($color-black , 0.8);
+    z-index: 500;
+    transition:all .5s;
+    opacity: 0;
+    visibility: hidden;
+
+    &__content {
+        @include AbsCenter;
+        border-radius: 8px;
+        width: 75%;
+        background-color: $color-white;
+        display: table;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(0.5);
+        transition: all .6s ease-out;
+
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;    
+    }
+
+    &__left {
+        width: 33.33333%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__right {
+        width: 66.666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img {
+        display : block;
+        width:   100%;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        // hyphens: auto;  // you have to specify a document language in the html tag
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px dashed $color-grey-light-2;
+
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px dashed $color-grey-light-2;
+    }
+
+
+    &:target  &__content {  //when the popup becomes the target , we select the content , and apply the followin properties to it
+        opacity: 1;
+        transform:translate(-50% , -50%) scale(1);
+    } 
+
+    &__close {
+        &:link,
+        &:visited {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: black;
+            font-size: 4rem;
+            display: inline-block;
+            text-decoration: none;
+            line-height: 1; //this is a text , and it has a predefined line-height !!
+        }
+      
+    }
+
+}

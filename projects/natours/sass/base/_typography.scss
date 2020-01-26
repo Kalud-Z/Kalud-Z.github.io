@@ -1,0 +1,120 @@
+
+
+body { /* all the stuff in here , will be inherited to the child elements.*/
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7; /* 1.7 times bigger than the pre defined value */
+    color: rgb(119, 119, 119);
+}
+
+
+.heading-primary {     /* this is the h1 , containing the following two span tags and the button */
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom:  6rem;    
+    backface-visibility: hidden;  /* not very important */ //this one is fixed also alot of weird shit happens when using transform and animation stuff.
+
+        
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        margin-right: -3.5rem;
+
+        animation-name: MoveInLeft;    /* this stuff happens only upon loading the page ! */
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            font-size: 4.7rem;
+        }
+
+        /* animation-delay: 1s; */
+        /* animation-iteration-count: 3; */
+    }
+
+    &--sub {
+        display: block;  
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        margin-right: -1.8rem;
+        animation: MoveInRight 1s  ease-out ;  /* short version */
+
+        @include respond(phone) {
+            letter-spacing: .7rem;
+            // font-size: 1.5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light , $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip:text;  //it doesnt work !
+    background-clip:text;
+
+    color : transparent ; 
+    transition: all 0.2s;
+    letter-spacing: .2rem;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        transform: skewY(0) skewX(8deg) scale(1.05);
+        text-shadow: 5rem 1rem 2rem rgba($color-primary-dark, 0.5);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    &:not(:last-child) { margin-bottom: 3rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
