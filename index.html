@@ -98,16 +98,16 @@
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
         <h4>HTML5</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="66"> <span class="percent">66</span> </span>
+      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="66"> <span class="percent">66</span> </span>
         <h4>CSS3</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">50</span> </span>
+      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">50</span> </span>
         <h4>JavaScript</h4>
       </div>
-      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">50</span> </span>
+      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">50</span> </span>
         <h4>Photoshop</h4>
       </div>
       
@@ -139,31 +139,54 @@
 
     <div class="row">
       <div class="portfolio-items">
+
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
             <div class="hover-bg">
               <div class="hover-text">
+                <div class="popup" id="popup1"> <!-- mycode -->
+                  <p> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Respoonsive Website personally developed from scrach <br> using HTML5 & CSS3. <br>
+                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Sass and BEM architecture was implemented during development. <br>
+                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to my great teacher Jonas Schmedtmann. 
+                  </p>
+              </div>
+              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
                 <h4>Natours</h4>
                 <small>Web Design</small> 
-                <button onclick="window.location.href = 'projects/natours/index.html';" class="checkout-project">Check it Out!</button>
+                <button onclick="window.location.href = 'projects/natours/index.html';" class="checkout-project">Check it Out!</button> <!-- mycode -->     
               </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"></div>
+              <img src="projects/natours/cover-pic-small.jpg" class="img-responsive" alt="Project Title">
+            </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project description" rel="prettyPhoto">
+            <div class="hover-bg">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development</small> </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <div class="popup" id="popup2"> <!-- mycode -->
+                  <p>  <span style="color:rgb(228, 64, 42);" >&#8226;</span> Respoonsive Website personally developed from scrach <br> using HTML5 & CSS3. <br>
+                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to my great teacher Jonas Schmedtmann. 
+                  </p>
+              </div>
+              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
+                <h4>Omnifood</h4>
+                <small>Web Design</small> 
+                <button onclick="window.location.href = 'projects/omnifood/index.html';" class="checkout-project">Check it Out!</button> <!-- mycode -->     
+              </div>
+              <img src="projects/omnifood/food-small.jpg" class="img-responsive" alt="Project Title">
+            </div>
           </div>
         </div>
+
+
+        
 
 
       </div>
     </div>
+
+
   </div>
 </div>
 
@@ -208,41 +231,27 @@
 
 
 
-
-
 <div id="contact" class="text-center">
+
   <div class="container">
     <div class="section-title center">
       <h2>Contact</h2>
       <hr>
     </div>
-    <div class="col-md-8 col-md-offset-2">
+
+    <div class="col-md-12 col-md-offset-2">  
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>khaled.fhm@live.fr</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p> +49 176 84 2019 24</p>
+      </div>
       <div class="clearfix"></div>
     </div>
+
     <div class="col-md-8 col-md-offset-2">
       <h3>Leave me a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
-      </form>
+      
       <div class="social">
         <ul>
           <li><a href="https://www.facebook.com/khaled.fahem.9"><i class="fa fa-facebook"></i></a></li>
@@ -253,6 +262,7 @@
     </div>
   </div>
 </div>
+
 
 
 <div id="footer">
@@ -275,6 +285,7 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/project_info.js"></script>
 
 </body>
 </html>
