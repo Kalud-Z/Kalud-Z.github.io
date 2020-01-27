@@ -11,7 +11,7 @@
 *.sass-cache
 node_modules/
 .tmp/
-
+#whatever
 *.txt
 
 # OS or Editor folders
