@@ -1,0 +1,453 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /* this is the root font-size ! | and = 62.5% of the default browser font-size which is usually 16px ==> final value 10px */
+  scroll-behavior: smooth; }
+
+body {
+  /* all the stuff in here , will be inherited to the child elements.*/
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.heading-primary {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: .5rem; }
+
+.para1 {
+  font-size: 1.6rem; }
+
+.para2 {
+  font-size: 1.3rem;
+  font-style: italic; }
+
+.city-name-big {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: .5rem;
+  font-style: italic; }
+
+.city-name-small {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: .3rem;
+  font-style: italic;
+  text-transform: capitalize; }
+
+.date {
+  font-size: 1.6rem;
+  font-style: italic; }
+
+.center-elements {
+  text-align: center; }
+
+.margin-bottom-extra-small {
+  margin-bottom: 1rem !important; }
+
+.margin-bottom-small {
+  margin-bottom: 2rem !important; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.margin-bottom-big {
+  margin-bottom: 6rem !important; }
+
+.color-light {
+  color: #9b9ba8; }
+
+.color-dark {
+  color: #4d4d52; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /* this is the root font-size ! | and = 62.5% of the default browser font-size which is usually 16px ==> final value 10px */
+  scroll-behavior: smooth; }
+
+body {
+  /* all the stuff in here , will be inherited to the child elements.*/
+  box-sizing: border-box; }
+
+.sold-out {
+  padding: 0.25rem 0.55rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.7rem;
+  text-transform: capitalize; }
+
+.tickets-available {
+  padding: 0.1rem 0.75rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  float: right; }
+
+.button {
+  padding: 1.3rem 1.9rem;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #333333;
+  text-transform: capitalize;
+  margin: 1.8rem 0;
+  border-radius: 4px;
+  transition: background-color 0.2s; }
+  .button:hover {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #333333; }
+
+.form__input {
+  padding: 1rem 1rem;
+  width: 100%; }
+
+.form__comment {
+  width: 100%;
+  margin-top: -3rem;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  resize: none; }
+
+.form__button {
+  float: right;
+  margin-top: 1rem;
+  font-weight: 900;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.dropdown {
+  position: relative; }
+  .dropdown::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .dropdown__caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: -.5rem;
+    vertical-align: middle;
+    /* border-top: 4px dashed; */
+    border-top: 5px solid #9b9ba8;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: all 0.2s; }
+  .dropdown__list {
+    list-style: none;
+    position: absolute;
+    top: 5.6rem;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-out; }
+  .dropdown:hover .dropdown__list {
+    opacity: 1;
+    visibility: visible; }
+  .dropdown__item {
+    display: block;
+    font-size: calc( 1.6rem - 25%);
+    width: 100%;
+    background-color: lightgray;
+    padding: 1rem 2rem; }
+    .dropdown__item:hover {
+      background-color: red; }
+    .dropdown__item:hover .dropdown__link {
+      color: white; }
+  .dropdown__link, .dropdown__link:link, .dropdown__link:visited {
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4d4d52;
+    transition: all 0.2s; }
+
+.arrow-down {
+  font-size: 3rem;
+  line-height: 120%;
+  vertical-align: middle;
+  transform: rotate(90deg); }
+
+.popup-tickets {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.644);
+  width: 100%;
+  height: 100vh;
+  z-index: 2222;
+  font-size: 1.6rem;
+  color: white;
+  transition: all 0.1s; }
+  .popup-tickets-show {
+    opacity: 1 !important;
+    visibility: visible !important; }
+  .popup-tickets__content-wrapper {
+    width: 70rem;
+    background-color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all .5s ease-out; }
+    .popup-tickets__content-wrapper-show {
+      top: 50% !important;
+      transform: translate(-50%, -50%) scale(1) !important; }
+  .popup-tickets__head {
+    font-size: calc( 2 * 1.6rem);
+    letter-spacing: 1rem;
+    font-weight: bolder;
+    width: 100%;
+    height: 33%;
+    background-color: #333333;
+    text-align: center;
+    padding: 5rem; }
+    .popup-tickets__head__icon-lock {
+      position: relative;
+      top: 0.5rem;
+      font-size: calc( 2 * 1.6rem + 0.2rem); }
+    .popup-tickets__head__close {
+      color: white;
+      opacity: 0.5;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 3rem !important;
+      cursor: pointer;
+      transition: all 0.2s; }
+    .popup-tickets__head__close:hover {
+      opacity: 0.89; }
+  .popup-tickets__body {
+    height: 44%;
+    margin: 3rem 0; }
+    .popup-tickets__body__pay-btn {
+      border-radius: 3px;
+      font-size: 1.6rem;
+      margin: 0;
+      padding-top: 1.5;
+      padding-bottom: 1.5;
+      width: 100%; }
+  .popup-tickets__form {
+    width: 87%;
+    margin: 0 auto; }
+    .popup-tickets__form__group {
+      display: block;
+      margin-bottom: 1rem; }
+    .popup-tickets__form__cart-icon {
+      position: relative;
+      top: 0.3rem; }
+    .popup-tickets__form__label {
+      display: block;
+      padding: 0.7rem 0rem;
+      font-weight: 800;
+      color: rgba(206, 173, 173, 0.699); }
+    .popup-tickets__form__input {
+      display: block;
+      padding: 1rem 1rem;
+      width: 100%;
+      border: 1px solid rgba(78, 72, 72, 0.363);
+      color: rgba(78, 72, 72, 0.849); }
+  .popup-tickets__footer {
+    background-color: rgba(0, 0, 0, 0.062);
+    padding: 1.5rem 1.7rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.356); }
+    .popup-tickets__footer::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .popup-tickets__footer__left {
+      float: left; }
+    .popup-tickets__footer__right {
+      float: right;
+      padding: 1.5rem 0rem;
+      color: #BDBDBF;
+      font-style: italic;
+      font-weight: lighter; }
+      .popup-tickets__footer__right a {
+        text-decoration: none;
+        font-weight: 900;
+        color: #848494; }
+        .popup-tickets__footer__right a:hover {
+          color: rgba(0, 0, 255, 0.842); }
+    .popup-tickets__footer__cancel-btn {
+      border-radius: 3px;
+      font-size: 1.6rem;
+      margin: 0;
+      padding: 1.5rem 3rem; }
+
+.header {
+  position: relative; }
+  .header__picture {
+    width: 100%; }
+  .header__text-box {
+    color: white;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.row {
+  max-width: 105rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 5rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 5rem; }
+  .row .col-1-of-1 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc( (100% - 5rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc( (100% - (5rem * 2) ) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 5rem) / 3) + 5rem); }
+  .row .col-1-of-4 {
+    width: calc( (100% - (5rem * 3) ) / 4); }
+
+.footer {
+  padding: 7rem 0;
+  background-color: #2f2f2f;
+  color: white; }
+
+.footer__link, .footer__link:link, .footer__link:visited {
+  color: blue;
+  text-decoration: none;
+  transition: all .2s; }
+
+.footer__link:hover, .footer__link:active {
+  text-decoration: underline; }
+
+.nav-bar {
+  background-color: #333333;
+  letter-spacing: .4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1111; }
+  .nav-bar::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .nav-bar__logo-box {
+    float: left;
+    margin-left: 1.7rem; }
+  .nav-bar__logo {
+    width: 5rem; }
+  .nav-bar__list {
+    list-style: none;
+    float: right; }
+  .nav-bar__item {
+    padding: 1.7rem 2.3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer; }
+  .nav-bar__link, .nav-bar__link:link, .nav-bar__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #333333;
+    color: #9b9ba8;
+    transition: all 0.2s;
+    margin-top: 2rem; }
+  .nav-bar__link:hover {
+    color: white; }
+  .nav-bar__link:hover .dropdown__caret {
+    border-top: 5px solid white;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent; }
+
+.section-band {
+  padding: 7rem 0;
+  background-color: white; }
+  .section-band__caption {
+    color: grey;
+    font-size: 1.6rem; }
+  .section-band__picture {
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: all 0.2s; }
+    .section-band__picture:hover {
+      opacity: 1; }
+
+.section-tour-dates {
+  background-color: #333333;
+  color: white;
+  padding: 7rem 0; }
+  .section-tour-dates__list {
+    list-style: none;
+    text-align: left;
+    z-index: 0; }
+  .section-tour-dates__item {
+    padding: 1rem 1rem;
+    background-color: white;
+    font-size: 1.6rem;
+    position: relative; }
+    .section-tour-dates__item:not(:last-child) {
+      border-bottom: 1px solid #9b9ba8; }
+  .section-tour-dates__picture-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0; }
+  .section-tour-dates__picture {
+    width: 100%;
+    height: auto;
+    transform: scale(1.03);
+    transition: all 0.7s;
+    opacity: 0.85; }
+  .section-tour-dates__column {
+    background-color: white; }
+  .section-tour-dates__column:hover .section-tour-dates__picture {
+    opacity: 1;
+    transform: scale(1.12); }
+  .section-tour-dates__sold-out {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%); }
+
+.section-contact {
+  padding: 7rem 0;
+  font-size: 1.6rem; }
+  .section-contact__list {
+    list-style: none; }
+  .section-contact__item {
+    text-decoration: none;
+    padding: 1rem 0; }
+    .section-contact__item:first-child {
+      margin-left: 0.7rem;
+      font-style: oblique; }
+  .section-contact__logo {
+    line-height: 120%;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    padding: 0.3rem 0.5rem; }
+
+.section-map {
+  margin-bottom: -.3rem; }
+  .section-map__border-top {
+    border-top: 1px solid #9b9ba8;
+    width: 44%;
+    margin: 0 auto;
+    padding-top: 7rem; }
+  .section-map__picture {
+    width: 100%; }

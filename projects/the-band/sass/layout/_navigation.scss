@@ -1,0 +1,78 @@
+
+
+.nav-bar {
+    background-color: $color-main-theme;
+    letter-spacing: .4rem;
+    @include clearfix;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1111;
+
+
+    &__logo-box {
+        float : left;
+        margin-left: 1.7rem;
+    }
+
+    &__logo {
+        width : 5rem;
+    }
+
+    &__list {
+        list-style: none;
+        float : right;
+    }
+
+    &__item {
+        padding: 1.7rem 2.3rem;
+        display: inline-block;
+        font-size: $default-font-size;
+        cursor: pointer;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {            
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: $color-main-theme;
+            // background-color: red;
+            color : $color-main-light;
+            transition: all 0.2s;
+            margin-top: 2rem;
+        
+        }
+
+        &:hover {
+            color : white;
+        }
+        &:hover .dropdown__caret {
+            border-top: 5px solid white;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
