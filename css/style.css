@@ -202,7 +202,10 @@ hr {
 	background: #f6f6f6;
 }
 #about .about-text {
-	margin-left: 10px;
+	/* margin-left: 10px; */
+	margin:0 auto !important;
+	font-family: 'Kurale', serif;
+	font-size: 2rem;
 }
 #about img {
 	border-radius: 50%;
