@@ -1,5 +1,6 @@
 /*
-0 - 600px       :phone
+0 400           :phone-small
+400px - 600px   :phone
 600 - 900px     :tablet portrait
 900 - 1200px    :tablet landscape
 [1200px - 1800px] => where out normal styles apply  (Desktop first approach)
@@ -7,6 +8,7 @@
 */
 /*
 $breakpoint argument choices :
+- small-phone // only the nav needs extra attention for extra small devices like Galaxy S5 !
 - phone
 - tab-port
 - tab-land
@@ -37,7 +39,8 @@ $breakpoint argument choices :
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  border: 1px solid red; }
 
 html {
   font-size: 62.5%;
@@ -173,7 +176,8 @@ body {
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  border: 1px solid red; }
 
 html {
   font-size: 62.5%;
@@ -814,10 +818,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 540px) {
+    .navigation__list {
+      transform: translate(-50%, -41%); } }
 
 .navigation__item {
   list-style: none;
   margin: 1rem; }
+  @media (max-width: 540px) {
+    .navigation__item {
+      width: 33rem; } }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
