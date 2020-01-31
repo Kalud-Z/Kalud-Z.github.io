@@ -11,8 +11,8 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    //border:0.5px solid red;
+    box-sizing: border-box;
+    /* border:1px solid red; */
 }
 
 html,
@@ -49,6 +49,7 @@ body {
 .section-features {
     padding: 80px 0 ;
 }
+
 
 .box {
     padding: 2%;
@@ -250,6 +251,7 @@ header {
     float : right;
     list-style: none;
     margin-top : 55px;
+
 }
 
 
@@ -707,6 +709,20 @@ footer p {
     text-align: center;
     margin-top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
