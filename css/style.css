@@ -207,12 +207,36 @@ hr {
 	font-family: 'Kurale', serif;
 	font-size: 2rem;
 }
+
+@media only screen and (max-width: 360px) {
+
+	.header-button-kf {
+		margin-bottom: -33px !important;
+		margin-top: 45px !important;
+	}
+
+	#about , #skills , #portfolio , #contact {
+		padding-top: 44px !important;
+		padding-bottom: 44px !important ;
+	}
+
+	.section-title { padding-bottom: 3px !important;}
+
+	#about .about-text { font-size: 1.4rem ; }
+  }
+
+
 #about img {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
 	display: inline-block;
 }
+
+@media only screen and (max-width: 990px) {
+	#about img { margin-bottom: 3rem; }
+  }
+
 #about p {
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -281,6 +305,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 ul.cat li {
 	display: inline-block;
 }
+
+@media only screen and (max-width: 360px) {
+	.type {
+		width:100%;
+	}
+
+	.type li:last-child {
+		margin-top: 30px;
+	}
+
+}
+
 ol.type li {
 	display: inline-block;
 	margin-left: 20px;
@@ -420,6 +456,13 @@ ol.type li a:hover {
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 360px) {
+	.popup {
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+}
 
 
 
