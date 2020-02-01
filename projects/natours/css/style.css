@@ -39,24 +39,22 @@ $breakpoint argument choices :
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  }
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  /* this is the root font-size ! | and = 62.5% of the default browser font-size which is usually 16px ==> final value 10px */
+  font-size: 50%;
   /*  @include respond(phone) {
         font-size: 30%;      // 1 rem = 4.5px!
     } */ }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 50.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media (max-width: 22.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 40%; } }
 
 body {
   /* all the stuff in here , will be inherited to the child elements.*/
@@ -176,24 +174,22 @@ body {
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  }
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  /* this is the root font-size ! | and = 62.5% of the default browser font-size which is usually 16px ==> final value 10px */
+  font-size: 50%;
   /*  @include respond(phone) {
         font-size: 30%;      // 1 rem = 4.5px!
     } */ }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 50.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media (max-width: 22.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 40%; } }
 
 body {
   /* all the stuff in here , will be inherited to the child elements.*/
@@ -911,7 +907,11 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all .6s ease-out; }
+    transition: all .6s ease-out;
+    height: auto; }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        width: 95%; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -919,26 +919,42 @@ body {
     width: 33.33333%;
     display: table-cell;
     vertical-align: middle; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 75em) {
+      .popup__img {
+        width: 111%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px dashed #eee;
+    /*  -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px dashed $color-grey-light-2; */
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px dashed #eee; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        font-size: 2rem; } }
+    @media (max-width: 22.5em) {
+      .popup__text {
+        -moz-column-count: 0;
+        column-count: auto; } }
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
