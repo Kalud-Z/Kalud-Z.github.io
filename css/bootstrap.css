@@ -12,9 +12,10 @@ html {
 }
 body {
   margin: 0;
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
   background-color:  black !important;
   padding-bottom: 10px !important;
+  overflow-x: hidden;
 }
 article,
 aside,
