@@ -87,16 +87,12 @@ document.addEventListener('keypress', function(event){
 // ###############################  FUNCTIONS #################################################
 //#############################################################################################
 
-
 function btnRoll() {
     if(gamePlaying) {
-
-    
         var diceDOM = document.querySelector('.dice');
-            diceDOM.style.display = 'block';      
-            dice = Math.floor(Math.random()*6) + 1;
-       
-            diceDOM.src = 'dice-' + dice + '.png';
+        var dice = Math.floor(Math.random()*6) + 1;  console.log(dice);
+        diceDOM.style.display = 'block';      
+        diceDOM.src = 'dice-' + dice + '.png';
 
         if(dice > 1) {
             roundScore += dice;

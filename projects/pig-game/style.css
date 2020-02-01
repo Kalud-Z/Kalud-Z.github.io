@@ -2,15 +2,28 @@
 *** GENERAL
 **********************************************/
 
+* {
+    /* border: 1px solid red !important; */
+}
+
+
+/* this defines what 1 rem is : 1rem = 10px */
+html { 
+    font-size: 62.5%; 
+  
+}
+
+
+
 .show-popup {
     opacity : 1 !important;
     visibility : visible !important;
 }
 
 .popup {
-    width: 800px;
+    width: 80rem;
     border: 1px solid #df7979;
-    padding: 30px 20px; 
+    padding: 3rem 2rem; 
     position: absolute;
     top:0;
     left: 50%;
@@ -18,7 +31,7 @@
     background-color: #f5d6d6;
     color: black;
     z-index: 100;
-    border-radius: 10px;
+    border-radius: 1rem;
     opacity: 0;
     visibility: hidden;
     transition:all .25s;
@@ -27,47 +40,47 @@
 .popup__close-container:link,
 .popup__close-container:visited {
     position: absolute;
-    top :10px;
-    right: 10px;
+    top :1rem;
+    right: 1rem;
 }
 
 .popup__close-icon {
-    width: 20px;
+    width: 2rem;
 }   
 
 .popup h1 {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .popup h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-style: italic;
 }
 
 
 .popup p {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .btn-help:link,
 .btn-help:visited {
     position: absolute;
-    top:10px;
-    left: 10px;
+    top:1rem;
+    left: 1rem;
     /* background-color: red; */
     border-radius: 50%;
     z-index: 100;
 }
 
 .btn-help img {
-    width: 60px;
+    width: 6rem;
 }
 
 
@@ -76,16 +89,16 @@
     top:93%;
     left: 50%;
     transform: translate(-50% , -50%);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 900;
     display: inline-block;
 }
 
 .final-score {
-    width: 200px;
-    padding: 16px 0;
+    width: 20rem;
+    padding: 1.6rem 0;
     text-align: center;
-    font-size: 28px;
+    font-size: 2.8rem;
     margin:auto 0;
     border:none;
     background-color: rgba(235, 77, 77, 0.141);
@@ -96,9 +109,9 @@
 }
 
 .final-score-submit {
-    width: 100px;
-    height: 35px;
-    font-size: 18px;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.8rem;
 }
 
 
@@ -116,7 +129,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(sky-gb-img.jpg);
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -124,25 +137,27 @@ body {
     position: relative;
     height: 100vh;
     color: #555;
+   
 }
 
 .wrapper {
-    width: 1000px;
+    width: 100rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1rem 5rem rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    border-radius: 1rem;
 }
 
 .player-0-panel,
 .player-1-panel {
     width: 50%;
     float: left;
-    height: 600px;
-    padding: 100px;
+    height: 60rem;
+    padding: 10rem;
 }
 
 
@@ -152,22 +167,22 @@ body {
 **********************************************/
 
 .player-name {
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     font-weight: 100;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
 .player-score {
     text-align: center;
-    font-size: 80px;
+    font-size: 8rem;
     font-weight: 100;
     color: #EB4D4D;
-    margin-bottom: 130px;
+    margin-bottom: 13rem;
 }
 
 /* .active { background-color: #f7f7f7; } */
@@ -176,11 +191,11 @@ body {
 
 .active .player-name::after {
     content: "\2022";
-    font-size: 47px;
+    font-size: 4.7rem;
     position: absolute;
     color: #EB4D4D;
-    top: -7px;
-    right: 10px;
+    top: -.7rem;
+    right: 1rem;
     
 }
 
@@ -189,19 +204,19 @@ body {
     color: #fff;
     width: 40%;
     margin: 0 auto;
-    padding: 12px;
+    padding: 1.2rem;
     text-align: center;
 }
 
 .player-current-label {
     text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     color: #222;
 }
 
 .player-current-score {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 
@@ -215,14 +230,14 @@ button,
 
 button:not(:last-child) {
     position: absolute;
-    width: 200px;
+    width: 20rem;
     left: 50%;
     transform: translateX(-50%);
     color: #555;
     background: none;
     border: none;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 300;
@@ -230,7 +245,7 @@ button:not(:last-child) {
 }
 
 button:not(:last-child):hover { font-weight: 600; }
-button:not(:last-child):hover i { margin-right: 20px; }
+button:not(:last-child):hover i { margin-right: 2rem; }
 
 button:not(:last-child):focus {
     outline: none;
@@ -241,26 +256,42 @@ button:not(:last-child):focus {
 i {
     color: #EB4D4D;
     display: inline-block;
-    margin-right: 15px;
-    font-size: 32px;
+    margin-right: 1.5rem;
+    font-size: 3.2rem;
     line-height: 1;
     vertical-align: text-top;
-    margin-top: -4px;
+    margin-top: -.4rem;
     transition: margin 0.3s;
 }
 
-.btn-new { top: 45px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
+.btn-new { top: 4.5rem;}
+.btn-roll { top: 40.3rem;}
+.btn-hold { top: 46.7rem;}
 
 .dice {
     position: absolute;
     left: 50%;
-    top: 178px;
+    top: 17.8rem;
     transform: translateX(-50%);
-    height: 100px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    height: 10rem;
+    box-shadow: 0px 1rem 6rem rgba(0, 0, 0, 0.10);
 }
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
