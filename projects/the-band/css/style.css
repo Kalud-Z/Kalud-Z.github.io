@@ -1,3 +1,11 @@
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 60px; } }
+
+@media only screen and (max-width: 900px) {
+  .header {
+    height: 160px; } }
+
 *,
 *::after,
 *::before {
@@ -9,6 +17,18 @@ html {
   font-size: 62.5%;
   /* this is the root font-size ! | and = 62.5% of the default browser font-size which is usually 16px ==> final value 10px */
   scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 54%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 46%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 38%; } }
+  @media (max-width: 26.8em) {
+    html {
+      font-size: 36%; } }
 
 body {
   /* all the stuff in here , will be inherited to the child elements.*/
@@ -78,6 +98,18 @@ html {
   font-size: 62.5%;
   /* this is the root font-size ! | and = 62.5% of the default browser font-size which is usually 16px ==> final value 10px */
   scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 54%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 46%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 38%; } }
+  @media (max-width: 26.8em) {
+    html {
+      font-size: 36%; } }
 
 body {
   /* all the stuff in here , will be inherited to the child elements.*/
@@ -116,6 +148,10 @@ body {
 .form__input {
   padding: 1rem 1rem;
   width: 100%; }
+
+@media (max-width: 26.8em) {
+  .form #Email {
+    width: 113%; } }
 
 .form__comment {
   width: 100%;
@@ -204,6 +240,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.7);
     transition: all .5s ease-out; }
+    @media (max-width: 26.8em) {
+      .popup-tickets__content-wrapper {
+        width: 56rem; } }
     .popup-tickets__content-wrapper-show {
       top: 50% !important;
       transform: translate(-50%, -50%) scale(1) !important; }
@@ -313,12 +352,18 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 5rem; }
+      @media (max-width: 26.8em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0.6rem; } }
   .row .col-1-of-1 {
     width: 100%; }
   .row .col-1-of-2 {
     width: calc( (100% - 5rem) / 2); }
   .row .col-1-of-3 {
     width: calc( (100% - (5rem * 2) ) / 3); }
+    @media (max-width: 26.8em) {
+      .row .col-1-of-3 {
+        width: calc( (100% - (0.6rem * 2) ) / 3); } }
   .row .col-2-of-3 {
     width: calc( 2 * ((100% - 2 * 5rem) / 3) + 5rem); }
   .row .col-1-of-4 {
@@ -362,6 +407,9 @@ body {
     display: inline-block;
     font-size: 1.6rem;
     cursor: pointer; }
+    @media (max-width: 26.8em) {
+      .nav-bar__item {
+        padding: 1.7rem 1rem; } }
   .nav-bar__link, .nav-bar__link:link, .nav-bar__link:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -378,14 +426,23 @@ body {
 
 .section-band {
   padding: 7rem 0;
-  background-color: white; }
+  background-color: white;
+  /* @include respond(phone) {
+        margin-top: -152px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } */ }
+  @media (max-width: 56.25em) {
+    .section-band {
+      padding: 10rem 0; } }
   .section-band__caption {
     color: grey;
     font-size: 1.6rem; }
   .section-band__picture {
     border-radius: 50%;
     opacity: 0.7;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    width: 100%; }
     .section-band__picture:hover {
       opacity: 1; }
 
@@ -393,6 +450,10 @@ body {
   background-color: #333333;
   color: white;
   padding: 7rem 0; }
+  @media (max-width: 37.5em) {
+    .section-tour-dates {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .section-tour-dates__list {
     list-style: none;
     text-align: left;
@@ -428,6 +489,10 @@ body {
 .section-contact {
   padding: 7rem 0;
   font-size: 1.6rem; }
+  @media (max-width: 37.5em) {
+    .section-contact {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .section-contact__list {
     list-style: none; }
   .section-contact__item {
@@ -441,6 +506,12 @@ body {
     vertical-align: middle;
     margin-right: 0.7rem;
     padding: 0.3rem 0.5rem; }
+  @media (max-width: 26.8em) {
+    .section-contact .alternative-width {
+      width: 97%; } }
+  @media (max-width: 26.8em) {
+    .section-contact .alternative-width:first-child {
+      margin-bottom: 1rem; } }
 
 .section-map {
   margin-bottom: -.3rem; }
