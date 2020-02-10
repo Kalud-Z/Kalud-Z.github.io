@@ -92,7 +92,7 @@ function btnRoll() {
         var diceDOM = document.querySelector('.dice');
         var dice = Math.floor(Math.random()*6) + 1;  console.log(dice);
         diceDOM.style.display = 'block';      
-        diceDOM.src = 'dice-' + dice + '.png';
+        diceDOM.src = 'img/dice-' + dice + '.png';
 
         if(dice > 1) {
             roundScore += dice;
