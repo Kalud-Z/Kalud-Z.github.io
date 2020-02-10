@@ -67,7 +67,6 @@ html {
 
 .popup p {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
 }
 
 .btn-help:link,
@@ -109,19 +108,11 @@ html {
     outline: none;
 }
 
-
 .final-score-submit {
     width: 10rem;
     height: 3.5rem;
     font-size: 1.8rem;
-    text-transform: uppercase;
-    cursor: pointer;
 }
-
-.final-score-submit:active {
-    transform: translateY(-2px);
-}
-
 
 
 * {
@@ -237,7 +228,6 @@ button,
     user-select: none; /* Standard syntax */
 }
 
-
 button:not(:last-child) {
     position: absolute;
     width: 20rem;
@@ -274,6 +264,22 @@ i {
     transition: margin 0.3s;
 }
 
+.btn-new { top: 4.5rem;}
+.new-game-icon {
+    height: 2rem;
+    width: 2rem;
+    fill : red;
+    border: 1px solid blue;
+}
+
+
+
+.btn-roll { top: 40.3rem;}
+
+
+
+.btn-hold { top: 46.7rem;}
+
 .dice {
     position: absolute;
     left: 50%;
@@ -288,52 +294,11 @@ i {
 
 
 
-/* ###############################    BUTTONS ################################################################### */
-
-
-.btn {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn::before {
-    content: "";
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    margin-right: .7rem;
-    background-color: rgb(212, 94, 94);
-}
 
 
 
-.btn-new { top: 4.5rem; }
-.btn-new::before {
-    -webkit-mask-image: url(img/svg/plus-alt.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(img/svg/plus-alt.svg);
-    mask-size: cover; 
-}
 
 
-
-.btn-roll { top: 40.3rem;}
-.btn-roll::before {
-    -webkit-mask-image: url(img/svg/loop.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(img/svg/loop.svg);
-    mask-size: cover; 
-}
-
-
-.btn-hold { top: 46.7rem;}
-.btn-hold::before {
-    -webkit-mask-image: url(img/svg/download.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(img/svg/download.svg);
-    mask-size: cover; 
-}
 
 
 
