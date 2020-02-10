@@ -384,12 +384,36 @@ ol.type li a:hover {
 	position: relative;
 }
 
+.source-code-button {  /* mycode */
+	outline: none;
+	border:1px solid rgba(255, 0, 0, 0.664);
+	background-color: rgb(11, 153, 182);
+	padding:2px 4px;
+	font-weight: 300; 
+	text-align: center;
+	display: block;
+	font-size: 13px;
+	/* margin: 0 auto; */
+	/* margin-top: 8px; */
+	text-transform: uppercase;
+	position: absolute;
+	top: 3%;
+	right: 3%;
+}
+
+.source-code-button:hover {  /* mycode */
+	background-color: rgba(208, 255, 0, 0.76);
+	color: rgb(255, 0, 0);
+	font-weight: 600;
+}
+
+
 
 .checkout-project {  /* mycode */
 	outline: none;
 	border:1px solid rgba(255, 0, 0, 0.664);
 	background-color: rgb(11, 153, 182);
-	width:120px;
+	width:180px;
 	height: 38px;
 	text-align: center;
 	display: block;
