@@ -13,9 +13,6 @@
 
 
 
-
-
-
 /* ################################################################################################# */
 
 @media only screen and (max-width:600px) {
@@ -58,7 +55,7 @@
     }
 
     .add__description {
-        width: 15rem !important;
+        width: 15rem;
     }
 
     .add__value {

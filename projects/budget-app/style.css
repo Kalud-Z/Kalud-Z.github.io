@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* border:1px solid red;    */
+    /* border:.1px solid red;    */
 }
 
 
@@ -47,7 +47,9 @@ body {
 .top {
     /* height: 40vh; */
     height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.041)), url(img/calc.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(wall.jpg); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -274,21 +276,34 @@ h2 {
 
 .item__delete--btn {
     font-size: 2.2rem;
+    color: red;
     background: none;
     border: none;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
-    display: none;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.cancel__logo {
+    height: 2rem;
+    width: 2rem;
+    fill: currentColor;
+    /* pointer-events: none; */
+}
+
+.cancel__logo use {
+    pointer-events: none;
 }
 
 .item__delete--btn:focus { outline: none; }
 .item__delete--btn:active { transform: translateY(2px); }
 
-.item:hover .item__delete--btn { display: block; }
-.item:hover .item__value { transform: translateX(-2rem); }
-.item:hover .item__percentage { transform: translateX(-2rem); }
+/* .item:hover .item__delete--btn { display: block; } */
+/* .item:hover .item__value { transform: translateX(-2rem); } */
+/* .item:hover .item__percentage { transform: translateX(-2rem); } */
 
 
 .unpaid {
