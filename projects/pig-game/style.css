@@ -2,8 +2,11 @@
 *** GENERAL
 **********************************************/
 
-* {
-    /* border: 1px solid red !important; */
+*,
+*::after ,
+*::before
+ {
+    border: 1px solid red !important;
 }
 
 

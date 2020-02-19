@@ -162,7 +162,7 @@
     }
 
     .dice {
-        top: 46%;
+        top: 24%;
         transform: translate(-50%,-50%);
         height: 15rem;
     }
@@ -257,6 +257,11 @@
         margin-bottom: 0.6rem;
 
     }
+
+    .dice {
+        top: 27%;
+    }
+
 }
 
 
