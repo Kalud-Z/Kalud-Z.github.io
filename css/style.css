@@ -474,6 +474,10 @@ ol.type li a:hover {
     transition:all .25s;
 }
 
+.popup-singAlong {
+	display : none;
+}
+
 .popup p {
     margin-bottom: 10px;
 }
