@@ -1,570 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KF World</title>
-<meta name="description" content="">
-<meta name="author" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KF World</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Kurale|Podkova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kurale|Podkova&display=swap" rel="stylesheet">
 
-<!-- font-family: 'Podkova', serif;
-font-family: 'Kurale', serif; -->
+    <!-- font-family: 'Podkova', serif;
+    font-family: 'Kurale', serif; -->
 
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158164971-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  gtag('config', 'UA-158164971-1');
-</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158164971-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-158164971-1');
+    </script>
+
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="intro-text">
+              <h1>Hello, I'm <span class="name">Khaled Fahem</span></h1>
+              <p>Web-Designer & Front End Developer</p>
+              <a href="#about" class="btn btn-default btn-lg page-scroll header-button-kf">Learn More</a> </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
 
-</head>
+    <div id="nav">
+      <nav class="navbar navbar-custom">
+        <div class="container">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+              <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+              <li class="hidden"> <a href="#page-top"></a> </li>
+              <li> <a class="page-scroll" href="#about">About</a> </li>
+              <li> <a class="page-scroll" href="#skills">Skills</a> </li>
+              <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+              <!-- <li> <a class="page-scroll" href="#resume">Resume</a> </li> -->
+              <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="container">
-      <div class="row">
-        <div class="intro-text">
-          <h1>Hello, I'm <span class="name">Khaled Fahem</span></h1>
-          <p>Web-Designer & Front End Developer</p>
-          <a href="#about" class="btn btn-default btn-lg page-scroll header-button-kf">Learn More</a> </div>
+
+    <div id="about">
+      <div class="container" style="text-align: center;">
+        <div class="section-title text-center center">
+          <h2>About Me</h2>
+          <hr>
+        </div>
+        <div class="row">
+    <!--      <div class="col-md-12 text-center"><img src="img/me-very-small.jpg" class="img-responsive"></div>-->
+          <div class="col-md-12 text-center"><img src="img/pic555.jpg" class="img-responsive"></div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="about-text">
+
+              First of all, before I shall describe myself briefly, <br>
+              Warning : This page is only for Geeks Community !<br>
+              <br>
+              Ever since I laid my hands on a Keyboard<br>
+              U never hear me say, 'Oh God, Im Bored !'<br>
+              <br>
+              Nowadays,<br>
+              This whole world is build on objects of class Technology,<br>
+              Isn't though Internet the most promising subclass<br>
+              in the Inheritance Tree ?<br>
+              <br>
+              I know what you are thinking Now,<br>
+              'is he really applying for a logic-based job,<br>
+              with a narration coming from Sponge Bob ?'<br>
+              <br>
+              Well, I ain't gonna hide what I Am,<br>
+              Despise Ads and Spam,<br>
+              Mainly Vegan, screw you Ham,<br>
+              Rarely do well on a written Exam,<br>
+              Fortunately, designing a killer Program, is definitely my Jam.<br>
+              <br>
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
 
-<div id="nav">
-  <nav class="navbar navbar-custom">
-    <div class="container">
-      
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#about">About</a> </li>
-          <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-          <!-- <li> <a class="page-scroll" href="#resume">Resume</a> </li> -->
-          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-
-<div id="about">
-  <div class="container" style="text-align: center;">
-    <div class="section-title text-center center">
-      <h2>About Me</h2>
-      <hr>
-    </div>
-    <div class="row">
-<!--      <div class="col-md-12 text-center"><img src="img/me-very-small.jpg" class="img-responsive"></div>-->
-      <div class="col-md-12 text-center"><img src="img/pic555.jpg" class="img-responsive"></div>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="about-text">
-          
-          First of all, before I shall describe myself briefly, <br>
-          Warning : This page is only for Geeks Community !<br>
-          <br>
-          Ever since I laid my hands on a Keyboard<br>
-          U never hear me say, 'Oh God, Im Bored !'<br>
-          <br>
-          Nowadays,<br>
-          This whole world is build on objects of class Technology,<br>
-          Isn't though Internet the most promising subclass<br>
-          in the Inheritance Tree ?<br>
-          <br>
-          I know what you are thinking Now,<br>
-          'is he really applying for a logic-based job,<br>
-          with a narration coming from Sponge Bob ?'<br>
-          <br>
-          Well, I ain't gonna hide what I Am,<br>
-          Despise Ads and Spam,<br>
-          Mainly Vegan, screw you Ham,<br>
-          Rarely do well on a written Exam,<br>
-          Fortunately, designing a killer Program, is definitely my Jam.<br>
-          <br>
-
+    <div id="skills" class="text-center">
+      <div class="container">
+        <div class="section-title center">
+          <h2>Skills</h2>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+            <h4>HTML5</h4>
+          </div>
+          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="88"> <span class="percent">88</span> </span>
+            <h4>Angular</h4>
+          </div>
+          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="72"> <span class="percent">72</span> </span>
+            <h4>NestJS</h4>
+          </div>
+          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="69"> <span class="percent">69</span> </span>
+            <h4>CSS3</h4>
+          </div>
+          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
+            <h4>TypeScript</h4>
+          </div>
+          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">43</span> </span>
+            <h4>Photoshop</h4>
+          </div>
 
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 
-<div id="skills" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Skills</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-        <h4>HTML5</h4>
-      </div>
-      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="88"> <span class="percent">88</span> </span>
-        <h4>Angular</h4>
-      </div>
-      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="72"> <span class="percent">72</span> </span>
-        <h4>NestJS</h4>
-      </div>
-      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="69"> <span class="percent">69</span> </span>
-        <h4>CSS3</h4>
-      </div>
-      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
-        <h4>TypeScript</h4>
-      </div>
-      <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">43</span> </span>
-        <h4>Photoshop</h4>
-      </div>
-      
-    </div>
-  </div>
-</div>
+    <div id="portfolio">
+      <div class="container">
 
-
-<div id="portfolio">
-  <div class="container">
-
-    <div class="section-title text-center center">
-      <h2>Portfolio</h2>
-      <hr>
-    </div>
-
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".web" >Web Design</a></li>
-            <li><a href="#" data-filter=".app" >App Development</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-
-    <div class="row">
-      <div class="portfolio-items">
-
-         <!-- the Quiz Game (vanilla JS) ##############################################################################################  -->
-         <div class="col-sm-6 col-md-3 col-lg-4 app">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> <!-- mycode -->
-                  <p>
-                       <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I designed and developed this game from scratch using HTML, Sass and JavaScript.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  ES6 Modules are implemented, for better code maintainiblity and to ensure data encapsulation.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Data fetched from opentdb API.
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>The Quiz Game</h4>
-                <small>Web App (in vanilla JS)</small>  
-                <button onclick="window.open('projects/quiz-game/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->     
-                <button  onclick="window.open('https://github.com/Kalud-Z/TheQuizGame.git')" class="source-code-button"> source code </button> <!-- mycode --> 
-
-              </div>
-              <img src="projects/quiz-game/quiz-game-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
-         </div>
-
-        <!-- Lotto App -->
-        <div class="col-sm-6 col-md-3 col-lg-4 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> <!-- mycode -->
-                  <p>
-                       <span style="color:rgb(228, 64, 42);" >&#8226;</span> App written in JS ES5.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Module pattern is implemented for proper data encapsulation.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span> UI inspired from the German Lotto Website. <br>
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>Lotto Alexandria</h4>
-                <small>Web App</small>  
-                <button onclick="window.open('projects/lotto/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->     
-                <button  onclick="window.open('https://github.com/Kalud-Z/Lotto-Project.git')" class="source-code-button"> source code </button> <!-- mycode --> 
-
-              </div>
-              <img src="projects/lotto/money-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
+        <div class="section-title text-center center">
+          <h2>Portfolio</h2>
+          <hr>
         </div>
 
-         <!-- the Quiz Game Angular ##############################################################################################  -->
-         <div class="col-sm-6 col-md-3 col-lg-4 app">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> <!-- mycode -->
-                  <p>
-                       <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Game written in Angular and Sass.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  A lot of Angular powerful features are implemented (E.g. Routing, Angular Animation , Lazy-Loading , Feature-Modules ...)
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Data fetched from opentdb API.
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>The Quiz Game </h4>
-                <small>Web App (in Angular) </small>  
-                <button onclick="window.open('https://quizplanet-42507.web.app')" class="checkout-project">Check it Out!</button> <!-- mycode -->     
-                <button  onclick="window.open('https://github.com/Kalud-Z/QuizPlanet')" class="source-code-button"> source code </button> <!-- mycode --> 
+        <div class="categories">
+          <ul class="cat">
+            <li>
+              <ol class="type">
+                <li><a href="#" data-filter="*" class="active">All</a></li>
+                <li><a href="#" data-filter=".web" >Web Design</a></li>
+                <li><a href="#" data-filter=".app" >App Development</a></li>
+              </ol>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
 
-              </div>
-              <img src="projects/quiz-game/quiz-game-small-anuglar.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
-         </div>
+        <div class="row">
+          <div class="portfolio-items">
 
-        <!-- FrippaShop ##############################################################################################  -->
-        <div class="col-sm-6 col-md-3 col-lg-4 app">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> <!-- mycode -->
-                  <p>
-                    <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Web Application written in Angular and Sass.
-                    <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  It serves as data management system for a small-time retail company.
-                    <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  This is a public version of the app. Feel free to check it out and play around.
-                    __________________________________________________
-                    <br>
-                    <br> <span style="color:rgb(228, 64, 42);" >&#x000A4;</span>  Email: admin@gmail.com     | Password: verySecurePassword <br>
-                    <br> <span style="color:rgb(228, 64, 42);" >&#x000A4;</span>  Email: guestTour@gmail.com | Password: : wonderland
-                  </p>
+             <!-- the Quiz Game (vanilla JS) ##############################################################################################  -->
+             <div class="col-sm-6 col-md-3 col-lg-4 app">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                           <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I designed and developed this game from scratch using HTML, Sass and JavaScript.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  ES6 Modules are implemented, for better code maintainiblity and to ensure data encapsulation.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Data fetched from opentdb API.
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>The Quiz Game</h4>
+                    <small>Web App (in vanilla JS)</small>
+                    <button onclick="window.open('projects/quiz-game/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://github.com/Kalud-Z/TheQuizGame.git')" class="source-code-button"> source code </button> <!-- mycode -->
+
+                  </div>
+                  <img src="projects/quiz-game/quiz-game-small.jpg" class="img-responsive" alt="Project Title">
                 </div>
-                <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
-                <h4> FrippaShop </h4>
-                <small>Web App (in Angular) </small>
-                <button onclick="window.open('https://frippashop-testing.web.app/login')" class="checkout-project">Check it Out!</button> <!-- mycode -->
-                <button  onclick="window.open('https://github.com/Kalud-Z/FrippaShop')" class="source-code-button"> source code </button> <!-- mycode -->
-
               </div>
-              <img src="projects/frippaShop/pic-small.png" class="img-responsive" alt="Project Title">
+             </div>
+
+            <!-- Lotto App -->
+            <div class="col-sm-6 col-md-3 col-lg-4 web">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                           <span style="color:rgb(228, 64, 42);" >&#8226;</span> App written in JS ES5.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Module pattern is implemented for proper data encapsulation.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span> UI inspired from the German Lotto Website. <br>
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>Lotto Alexandria</h4>
+                    <small>Web App</small>
+                    <button onclick="window.open('projects/lotto/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://github.com/Kalud-Z/Lotto-Project.git')" class="source-code-button"> source code </button> <!-- mycode -->
+
+                  </div>
+                  <img src="projects/lotto/money-small.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
             </div>
+
+             <!-- the Quiz Game Angular ##############################################################################################  -->
+             <div class="col-sm-6 col-md-3 col-lg-4 app">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                           <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Game written in Angular and Sass.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  A lot of Angular powerful features are implemented (E.g. Routing, Angular Animation , Lazy-Loading , Feature-Modules ...)
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Data fetched from opentdb API.
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>The Quiz Game </h4>
+                    <small>Web App (in Angular) </small>
+                    <button onclick="window.open('https://quizplanet-42507.web.app')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://github.com/Kalud-Z/QuizPlanet')" class="source-code-button"> source code </button> <!-- mycode -->
+
+                  </div>
+                  <img src="projects/quiz-game/quiz-game-small-anuglar.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+             </div>
+
+            <!-- FrippaShop ##############################################################################################  -->
+            <div class="col-sm-6 col-md-3 col-lg-4 app">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Web Application written in Angular and Sass.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  It serves as data management system for a small-time retail company.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  This is a public version of the app. Feel free to check it out and play around.
+                        __________________________________________________
+                        <br>
+                        <br> <span style="color:rgb(228, 64, 42);" >&#x000A4;</span>  Email: admin@gmail.com     | Password: verySecurePassword <br>
+                        <br> <span style="color:rgb(228, 64, 42);" >&#x000A4;</span>  Email: guestTour@gmail.com | Password: : wonderland
+                      </p>
+                    </div>
+                    <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4> FrippaShop </h4>
+                    <small>Web App (in Angular) </small>
+                    <button onclick="window.open('https://frippashop-testing.web.app/login')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://github.com/Kalud-Z/FrippaShop')" class="source-code-button"> source code </button> <!-- mycode -->
+
+                  </div>
+                  <img src="projects/frippaShop/pic-small.png" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div>
+
+             <!-- the Budget App ##############################################################################################  -->
+             <!-- <div class="col-sm-6 col-md-3 col-lg-4 app">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2">
+                      <p>
+                           <span style="color:rgb(228, 64, 42);" >&#8226;</span> I wrote the script for this web application using<br> vanilla JavaScript ES5.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I implemented the module pattern for proper data encapsulation.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  UI credited to my great teacher Jonas Schmedtmann. <br>
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>The Budget App</h4>
+                    <small>Web App</small>
+                    <button onclick="window.open('projects/budget-app/index.html')" class="checkout-project">Check it Out!</button>
+                    <button  onclick="window.open('https://github.com/Kalud-Z/BudgetApp.git')" class="source-code-button"> source code </button>
+
+                  </div>
+                  <img src="projects/budget-app/budgetapp-pic-small.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+             </div> -->
+
+
+            <!-- SingAlong ##############################################################################################  -->
+            <div class="col-sm-6 col-md-3 col-lg-4 app">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Website written in Angular and Sass.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  A lot of Angular powerful features are implemented (E.g. Routing, Angular Animation , Lazy-Loading , Feature-Modules ...).
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Videos are fetched from Youtube Data API.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Lyrics are fetched from various Lyrics APIs.
+                      </p>
+                    </div>
+                    <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4> SingAlong </h4>
+                    <small>Web App (in Angular) </small>
+                    <button onclick="window.open('https://sing-along111.herokuapp.com/')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://gitlab.com/Kalud999/singalong')" class="source-code-button"> source code </button> <!-- mycode -->
+
+                  </div>
+                  <img src="img/singAlong-small.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div>
+
+            <!-- GitLab-Stats ##############################################################################################  -->
+            <div class="col-sm-6 col-md-3 col-lg-4 app">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span>  A dashboard with statistics on important KPIs in the development process.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  A lot of Angular powerful features are implemented (E.g. Routing, Angular Animation , Lazy-Loading , Feature-Modules ...).
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Data is regularly updated and fetched from GitLab REST API.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  NestJS is used as a backend.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Data is stored in PostgreSQL database.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  The whole App is dockerised.
+                      </p>
+                    </div>
+                    <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4> GitLab-Stats </h4>
+                    <small>Full-stack Web App</small>
+<!--                    <button onclick="window.open('https://sing-along111.herokuapp.com/')" class="checkout-project open-gitlabstats-video">Check it Out!</button> &lt;!&ndash; mycode &ndash;&gt;-->
+                    <button  class="checkout-project open-gitlabstats-video">Check it Out!</button> <!-- mycode -->
+                  </div>
+                  <img src="projects/gitlab-stats/pic-small.png" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div>
+
+            <script>
+              const btnOpen = document.querySelector('.open-gitlabstats-video');
+              btnOpen.addEventListener('click', () => {
+                document.querySelector('.blurryOverlay').style.display = "flex";
+
+                let btnClose = document.querySelector('.closeVideoButton');
+                btnClose.addEventListener('click', () => {
+                  document.querySelector('.blurryOverlay').style.display = "none";
+                });
+              });
+            </script>
+
+
+
+            <!-- the Pig Dice Game ##############################################################################################  -->
+           <!--  <div class="col-sm-6 col-md-3 col-lg-4 app">
+
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2">
+                      <p>
+                           <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I developed this web-based Game using HTML, CSS and JavaScript ES5.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Basic DOM manipulation.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  UI credited to my great teacher Jonas Schmedtmann.
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>The Pig Dice Game</h4>
+                    <small>Web App</small>
+                    <button onclick="window.open('projects/pig-game/index.html')" class="checkout-project">Check it Out!</button>
+                    <button  onclick="window.open('https://github.com/Kalud-Z/pig-game.git')" class="source-code-button"> source code </button>
+
+                  </div>
+                  <img src="projects/pig-game/img/dice-big-400-middle.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div> -->
+
+              <!-- Trillo ##############################################################################################  -->
+             <!--  <div class="col-sm-6 col-md-3 col-lg-4 web">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <div class="hover-text">
+                      <div class="popup" id="popup2">
+                        <p>
+                             <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I designed and developed this Website from scratch using HTML & CSS/Sass.
+                        <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I implemented flexbox properties, for easier layout maintainiblity and responsive adjustements.
+                        </p>
+                    </div>
+                    <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                      <h4>The Trillo Hotel</h4>
+                      <small>Web Design</small>
+                      <button onclick="window.open('projects/trillo/index.html')" class="checkout-project">Check it Out!</button>
+                      <button  onclick="window.open('https://github.com/Kalud-Z/Trillo.git')" class="source-code-button"> source code </button>
+
+                    </div>
+                    <img src="projects/trillo/main-img-small.jpg" class="img-responsive" alt="Project Title">
+                  </div>
+                </div>
+              </div> -->
+
+            <!-- Omnifood ##############################################################################################  -->
+            <div class="col-sm-6 col-md-3 col-lg-4 web">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2"> <!-- mycode -->
+                      <p>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span> Responsive Website personally developed from scrach using HTML5 & CSS3. <br>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to my great teacher Jonas Schmedtmann.
+                      </p>
+                    </div>
+                    <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>Omnifood</h4>
+                    <small>Web Design</small>
+                    <button onclick="window.open('projects/omnifood/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://github.com/Kalud-Z/omnifood.git')" class="source-code-button"> source code </button> <!-- mycode -->
+
+                  </div>
+                  <img src="projects/omnifood/food-small.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div>
+
+              <!-- Natours ##############################################################################################  -->
+            <div class="col-sm-6 col-md-3 col-lg-4 web">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup1"> <!-- mycode -->
+                      <p> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Responsive Website personally developed from scrach using HTML5 & CSS3. <br>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span> Sass and BEM architecture was implemented during development. <br>
+                        <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to my great teacher Jonas Schmedtmann.
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>Natours</h4>
+                    <small>Web Design</small>
+                    <button onclick="window.open('projects/natours/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->
+                    <button  onclick="window.open('https://github.com/Kalud-Z/Natours.git')" class="source-code-button"> source code </button> <!-- mycode -->
+                  </div>
+                  <img src="projects/natours/cover-pic-small.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div>
+
+
+            <!-- the Band website ##############################################################################################  -->
+            <!--  <div class="col-sm-6 col-md-3 col-lg-4 web">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <div class="hover-text">
+                    <div class="popup" id="popup2">
+                      <p>
+                           <span style="color:rgb(228, 64, 42);" >&#8226;</span> Responsive Website personally developed from scrach <br> using HTML5 & CSS3.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Sass and BEM architecture was implemented during development.
+                      <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to w3schools.com
+                      </p>
+                  </div>
+                  <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
+                    <h4>The Band</h4>
+                    <small>Web Design</small>
+                    <button onclick="window.open('projects/the-band/index.html')" class="checkout-project">Check it Out!</button>
+                    <button  onclick="window.open('https://github.com/Kalud-Z/The_Band.git')" class="source-code-button"> source code </button>
+
+                  </div>
+                  <img src="projects/the-band/the-band-pic-small.jpg" class="img-responsive" alt="Project Title">
+                </div>
+              </div>
+            </div> -->
+
+
+
+
+
+
           </div>
         </div>
 
-         <!-- the Budget App ##############################################################################################  -->
-         <!-- <div class="col-sm-6 col-md-3 col-lg-4 app">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> 
-                  <p>
-                       <span style="color:rgb(228, 64, 42);" >&#8226;</span> I wrote the script for this web application using<br> vanilla JavaScript ES5.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I implemented the module pattern for proper data encapsulation.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  UI credited to my great teacher Jonas Schmedtmann. <br>
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>The Budget App</h4>
-                <small>Web App</small>  
-                <button onclick="window.open('projects/budget-app/index.html')" class="checkout-project">Check it Out!</button>     
-                <button  onclick="window.open('https://github.com/Kalud-Z/BudgetApp.git')" class="source-code-button"> source code </button>  
 
-              </div>
-              <img src="projects/budget-app/budgetapp-pic-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
-         </div> -->
+      </div>
+    </div>
+
+    <!--
+    <div id="resume" class="text-center">
+
+      <div class="container">
+        <div class="section-title center">
+          <h2>Education</h2>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
 
 
-        <!-- SingAlong ##############################################################################################  -->
-        <div class="col-sm-6 col-md-3 col-lg-4 app">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> <!-- mycode -->
-                  <p>
-                    <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Website written in Angular and Sass.
-                    <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  A lot of Angular powerful features are implemented (E.g. Routing, Angular Animation , Lazy-Loading , Feature-Modules ...).
-                    <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Videos are fetched from Youtube Data API.
-                    <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Lyrics are fetched from various Lyrics APIs.
-                  </p>
+              <li>
+                <div class="timeline-image">
+                  <h4> 2017 <br>
+                    - <br>
+                    PRESENT </h4>
                 </div>
-                <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
-                <h4> SingAlong </h4>
-                <small>Web App (in Angular) </small>
-                <button onclick="window.open('https://sing-along111.herokuapp.com/')" class="checkout-project">Check it Out!</button> <!-- mycode -->
-                <button  onclick="window.open('https://gitlab.com/Kalud999/singalong')" class="source-code-button"> source code </button> <!-- mycode -->
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Pforzheim University</h4>
+                    <h4 class="subheading">Major : Computer Engineering</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                  </div>
+                </div>
+              </li>
 
-              </div>
-              <img src="img/singAlong-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
+            </ul>
           </div>
         </div>
+      </div>
+    </div> -->
 
 
-        <!-- the Pig Dice Game ##############################################################################################  -->
-       <!--  <div class="col-sm-6 col-md-3 col-lg-4 app">
 
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> 
-                  <p>
-                       <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I developed this web-based Game using HTML, CSS and JavaScript ES5.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Basic DOM manipulation.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  UI credited to my great teacher Jonas Schmedtmann.
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>The Pig Dice Game</h4>
-                <small>Web App</small>
-                <button onclick="window.open('projects/pig-game/index.html')" class="checkout-project">Check it Out!</button>     
-                <button  onclick="window.open('https://github.com/Kalud-Z/pig-game.git')" class="source-code-button"> source code </button>  
+    <div id="contact" class="text-center">
 
-              </div>
-              <img src="projects/pig-game/img/dice-big-400-middle.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
-        </div> -->
-
-          <!-- Trillo ##############################################################################################  -->
-         <!--  <div class="col-sm-6 col-md-3 col-lg-4 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <div class="hover-text">
-                  <div class="popup" id="popup2">
-                    <p>
-                         <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I designed and developed this Website from scratch using HTML & CSS/Sass.
-                    <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  I implemented flexbox properties, for easier layout maintainiblity and responsive adjustements.
-                    </p>
-                </div>
-                <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                  <h4>The Trillo Hotel</h4>
-                  <small>Web Design</small> 
-                  <button onclick="window.open('projects/trillo/index.html')" class="checkout-project">Check it Out!</button>    
-                  <button  onclick="window.open('https://github.com/Kalud-Z/Trillo.git')" class="source-code-button"> source code </button> 
-                  
-                </div>
-                <img src="projects/trillo/main-img-small.jpg" class="img-responsive" alt="Project Title">
-              </div>
-            </div>
-          </div> -->
-
-        <!-- Omnifood ##############################################################################################  -->
-        <div class="col-sm-6 col-md-3 col-lg-4 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2"> <!-- mycode -->
-                  <p>
-                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Responsive Website personally developed from scrach using HTML5 & CSS3. <br>
-                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to my great teacher Jonas Schmedtmann. 
-                  </p>
-                </div>
-                <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure>
-                <h4>Omnifood</h4>
-                <small>Web Design</small> 
-                <button onclick="window.open('projects/omnifood/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->     
-                <button  onclick="window.open('https://github.com/Kalud-Z/omnifood.git')" class="source-code-button"> source code </button> <!-- mycode --> 
-
-              </div>
-              <img src="projects/omnifood/food-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
+      <div class="container">
+        <div class="section-title center">
+          <h2>Contact</h2>
+          <hr>
         </div>
 
-          <!-- Natours ##############################################################################################  -->
-        <div class="col-sm-6 col-md-3 col-lg-4 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup1"> <!-- mycode -->
-                  <p> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Responsive Website personally developed from scrach using HTML5 & CSS3. <br>
-                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Sass and BEM architecture was implemented during development. <br>
-                    <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to my great teacher Jonas Schmedtmann. 
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>Natours</h4>
-                <small>Web Design</small> 
-                <button onclick="window.open('projects/natours/index.html')" class="checkout-project">Check it Out!</button> <!-- mycode -->     
-                <button  onclick="window.open('https://github.com/Kalud-Z/Natours.git')" class="source-code-button"> source code </button> <!-- mycode --> 
-              </div>
-              <img src="projects/natours/cover-pic-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
+        <div class="col-md-12 col-md-offset-2">
+          <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+            <p>khaled.fhm@live.fr</p>
+          </div>
+          <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+            <p> +49 176 84 2019 24</p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+          <h3>Leave me a message</h3>
+
+          <div class="social">
+            <ul>
+              <li><a href="https://www.facebook.com/khaled.fahem.9"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://github.com/Kalud-Z"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.instagram.com/kalud_alwzrude/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
           </div>
         </div>
-  
-
-        <!-- the Band website ##############################################################################################  -->
-        <!--  <div class="col-sm-6 col-md-3 col-lg-4 web">
-          <div class="portfolio-item">
-            <div class="hover-bg">
-              <div class="hover-text">
-                <div class="popup" id="popup2">
-                  <p> 
-                       <span style="color:rgb(228, 64, 42);" >&#8226;</span> Responsive Website personally developed from scrach <br> using HTML5 & CSS3.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span>  Sass and BEM architecture was implemented during development.
-                  <br> <span style="color:rgb(228, 64, 42);" >&#8226;</span> Design idea credited to w3schools.com
-                  </p>
-              </div>
-              <figure class="btn-help"><img src="img/info-logo-white.png" alt="info logo"></figure> 
-                <h4>The Band</h4>
-                <small>Web Design</small>  
-                <button onclick="window.open('projects/the-band/index.html')" class="checkout-project">Check it Out!</button>      
-                <button  onclick="window.open('https://github.com/Kalud-Z/The_Band.git')" class="source-code-button"> source code </button>
-
-              </div>
-              <img src="projects/the-band/the-band-pic-small.jpg" class="img-responsive" alt="Project Title">
-            </div>
-          </div>
-        </div> -->
-
-        
-      
-
-
-
       </div>
     </div>
 
 
-  </div>
-</div>
-
-
-
-
-<!-- 
-<div id="resume" class="text-center">
-  
-  <div class="container">
-    <div class="section-title center">
-      <h2>Education</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-        
-          
-          <li>
-            <div class="timeline-image">
-              <h4> 2017 <br>
-                - <br>
-                PRESENT </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Pforzheim University</h4>
-                <h4 class="subheading">Major : Computer Engineering</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-              </div>
-            </div>
-          </li>
-
-        </ul>
+    <div id="footer">
+      <div class="container text-center">
+        <div class="fnav">
+          <p>Copyright &copy; Original Design Idea From <span style="font-weight:700">TemplateWire</span></a></p>
+        </div>
       </div>
     </div>
-  </div>
-</div> -->
 
 
-
-<div id="contact" class="text-center">
-
-  <div class="container">
-    <div class="section-title center">
-      <h2>Contact</h2>
-      <hr>
-    </div>
-
-    <div class="col-md-12 col-md-offset-2">  
-      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>khaled.fhm@live.fr</p>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-        <p> +49 176 84 2019 24</p>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-
-    <div class="col-md-8 col-md-offset-2">
-      <h3>Leave me a message</h3>
-      
-      <div class="social">
-        <ul>
-          <li><a href="https://www.facebook.com/khaled.fahem.9"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://github.com/Kalud-Z"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/kalud_alwzrude/"><i class="fa fa-instagram"></i></a></li>
-        </ul>
+    <div class="blurryOverlay">
+      <div class="videoContainer">
+        <div class="closeVideoButton">&#10005;</div>
+        <div class="iframeWrapper">
+          <iframe class="responsive-iframe" src="https://drive.google.com/file/d/1HQ9UwzPyn3cAnCq3xbemrmanNwUTfElG/preview"></iframe>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 
-<div id="footer">
-  <div class="container text-center">
-    <div class="fnav">
-      <p>Copyright &copy; Original Design Idea From <span style="font-weight:700">TemplateWire</span></a></p>
-    </div>
-  </div>
-</div>
+
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/easypiechart.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.js"></script>
+    <script type="text/javascript" src="js/waypoints.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/project_info.js"></script>
+
+    <script>
+      document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script>
 
 
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/project_info.js"></script>
-
-</body>
+  </body>
 </html>
