@@ -1104,3 +1104,9 @@ header .intro-text {
 /*	transform: translateX(50%) rotate(45deg);*/
 /*}*/
 
+.portfolio-items {
+	/*background-color: red;*/
+	/*display: flex;*/
+	/*align-items: center;*/
+	/*justify-content: center;*/
+}
