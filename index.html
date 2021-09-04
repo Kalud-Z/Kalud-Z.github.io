@@ -32,6 +32,12 @@
     font-family: 'Kurale', serif; -->
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/5324a832de.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -132,35 +138,115 @@
     </div>
 
 
-    <div id="skills" class="text-center">
-      <div class="container">
-        <div class="section-title center">
-          <h2>Skills</h2>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="88"> <span class="percent">88</span> </span>
-            <h4>Angular</h4>
-          </div>
-          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="72"> <span class="percent">72</span> </span>
-            <h4>NestJS</h4>
-          </div>
-          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="79"> <span class="percent">79</span> </span>
-            <h4>Sass</h4>
-          </div>
-          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="40"> <span class="percent">40</span> </span>
-            <h4>DevOps</h4>
-          </div>
-          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
-            <h4>TypeScript</h4>
-          </div>
-          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">43</span> </span>
-            <h4>Photoshop</h4>
-          </div>
+      <!-- SKILLS section   -->
 
+<!--    <div id="skills" class="text-center">-->
+<!--      <div class="container">-->
+<!--        <div class="section-title center">-->
+<!--          <h2>Skills</h2>-->
+<!--          <hr>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="88"> <span class="percent">88</span> </span>-->
+<!--            <h4>Angular</h4>-->
+<!--          </div>-->
+<!--          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="72"> <span class="percent">72</span> </span>-->
+<!--            <h4>NestJS</h4>-->
+<!--          </div>-->
+<!--          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="79"> <span class="percent">79</span> </span>-->
+<!--            <h4>Sass</h4>-->
+<!--          </div>-->
+<!--          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="40"> <span class="percent">40</span> </span>-->
+<!--            <h4>DevOps</h4>-->
+<!--          </div>-->
+<!--          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>-->
+<!--            <h4>Docker</h4>-->
+<!--          </div>-->
+<!--          <div class="col-md-55 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">43</span> </span>-->
+<!--            <h4>Photoshop</h4>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+        <div id="skills" class="text-center">
+          <div class="container">
+            <div class="section-title center"> <h2>Skills</h2>
+              <hr>
+            </div>
+
+            <div class="skillsWrapper">
+              <div class="skills">
+                <div class="skill-custom">
+                  <div class="skill-name">Angular</div>
+                  <div class="skill-bar">
+                    <figure class="logoWrapper"> <i class="fab fa-angular skillLogo"></i> </figure>
+                    <div class="skill-per" per="95"></div>
+                  </div>
+                </div>
+
+                <div class="skill-custom">
+                  <div class="skill-name">Sass</div>
+                  <div class="skill-bar">
+                    <figure class="logoWrapper"> <i class="fab fa-sass skillLogo"></i> </figure>
+                    <div class="skill-per" per="80"></div>
+                  </div>
+                </div>
+
+                <div class="skill-custom">
+                  <div class="skill-name">NestJS</div>
+                  <div class="skill-bar">
+                    <figure class="logoWrapper"> <img class="nestjsIMG" src="img/nestjs-logo.png"> </figure>
+                    <div class="skill-per" per="76"></div>
+                  </div>
+                </div>
+
+                <div class="skill-custom">
+                  <div class="skill-name">DevOps</div>
+                  <div class="skill-bar">
+                    <figure class="logoWrapper"> <i class="fas fa-cogs skillLogo"></i> </figure>
+                    <div class="skill-per" per="40"></div>
+                  </div>
+                </div>
+
+                <div class="skill-custom">
+                  <div class="skill-name">Docker</div>
+                  <div class="skill-bar">
+                    <figure class="logoWrapper"> <i class="fab fa-docker skillLogo"></i> </figure>
+                    <div class="skill-per" per="55"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+
+
+
+
+    <script>
+      var $;
+      $('.skill-per').each(function () {
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width", per + '%');
+        $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+          duration: 1000,
+          step: function () {
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+
+          },
+          complete: function () {
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+
+          }
+
+        });
+      });
+    </script>
 
 
     <div id="portfolio">

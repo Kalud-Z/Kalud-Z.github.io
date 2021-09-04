@@ -930,14 +930,12 @@ header .intro-text {
 	display: none;
 }
 
-
 .videoContainer {
 	height: 75vh;
 	width: 75vw;
 	margin-top: -7rem;
 	position: relative;
 }
-
 
 .closeVideoButton {
 	z-index: 25555;
@@ -966,3 +964,143 @@ header .intro-text {
 	height: 100%;
 	border: none;
 }
+
+
+/* skills section ------------------------------------------------------------------------------------------------------------------------------------*/
+.skillsWrapper {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -22px;
+}
+
+
+.skills {
+	width: 100%;
+	padding: 0 20px;
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 20px;
+	grid-column-gap: 35px;
+}
+
+@media screen and (max-width: 754px) {
+	.skills {
+		grid-template-columns: 1fr;
+	}
+
+}
+
+
+.section-title {
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+
+.section-title h1 {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 700;
+	color: #000000;
+	margin: 0 0 5px;
+	position: relative;
+}
+
+.section-title h1:before {
+	content: '';
+	left: 0;
+	position: absolute;
+	height: 2px;
+	right: 32%;
+	background-color: #50c5fc;
+	bottom: 0;
+}
+
+.skills .section-title h1:before {
+	left: 30%;
+}
+
+.skill-custom {
+	/*background-color: yellow;*/
+}
+
+.text-center {
+	text-align: center;
+}
+
+.skill-name {
+	font-size: 21px;
+	font-weight: 700;
+	margin: 20px 0;
+	color: #8c6f61;
+}
+
+
+.skill-bar {
+	height: 20px;
+	background: #cacaca;
+	border-radius: 8px;
+	position: relative;
+}
+
+.logoWrapper {
+	height: 70px;
+	width: 70px;
+	border-radius: 100px;
+	position: absolute;
+	top: -43px;
+	left: -10px;
+	border:2px solid rgba(139, 0, 0, 0.31);
+	z-index: 3333;
+	background-color: white;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding:1rem;
+}
+
+.skillLogo {
+	font-size: 37px;
+}
+
+.nestjsIMG {
+	height: 100%;
+}
+
+
+.skill-per {
+	height: 20px;
+	background-color: #617e8c;
+	border-radius: 8px;
+	width: 0;
+	transition: 1s linear;
+	position: relative;
+}
+
+
+/*.skill-per::before{*/
+/*	content: attr(per);*/
+/*	position: absolute;*/
+/*	padding: 4px 6px;*/
+/*	background-color: #000;*/
+/*	color: #fff;*/
+/*	font-size: 12px;*/
+/*	border-radius: 4px;*/
+/*	top: -35px;*/
+/*	right: 0;*/
+/*	transform: translateX(50%);*/
+/*}*/
+/*.skill-per::after{*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	width: 10px;*/
+/*	height: 10px;*/
+/*	background-color: #000;*/
+/*	border-radius: 2px;*/
+/*	top: -16px;*/
+/*	right: 0;*/
+/*	transform: translateX(50%) rotate(45deg);*/
+/*}*/
+
