@@ -1110,3 +1110,46 @@ header .intro-text {
 	/*align-items: center;*/
 	/*justify-content: center;*/
 }
+
+.contact-container {
+	/*background-color: red;*/
+	width: 70vw;
+	margin-right: auto;
+	margin-left: auto;
+
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 7rem;
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 5rem;
+}
+
+.contact-item {
+	/*background-color: yellow;*/
+}
+
+.contact-item__icon {
+	margin-bottom: 2rem !important;
+}
+
+
+.contact-item__content {
+
+}
+
+#linkedIn-icon {
+	height:4.2rem;
+}
+
+.clickable-item {
+	cursor: pointer;
+}
+
+
+.leave-message {
+	font-family: 'Inconsolata', monospace;
+	color: rgba(231, 65, 65, 0.68) !important;
+}
+
